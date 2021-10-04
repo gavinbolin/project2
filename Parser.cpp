@@ -258,7 +258,6 @@ void Parser::idList(vector<Token*> tokens){
 void Parser::parameter(vector<Token*> tokens) {
     if (tokens[index]->getType() == TokenType::STRING){
         string str = tokens[index]->getDesc();
-        domain.push_back(str);
         Parameter* p = new Parameter(1,str);
         temp.push_back(p);
         index++;
