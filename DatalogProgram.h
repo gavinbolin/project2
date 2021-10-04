@@ -21,30 +21,30 @@ public:
     void setDomain(vector<string> v){this->domain = v;}
     void toString(){
         cout << "Schemes(" << vecS.size() << "):\n";
-        for (int i=0; i < vecS.size(); i++){
+        for (size_t i=0; i < vecS.size(); i++){
             cout << "  ";
             vecS[i]->toString();
             cout << ")\n";
         }
         cout << "Facts(" << vecF.size() << "):\n";
-        for (int i=0; i < vecF.size(); i++){
+        for (size_t i=0; i < vecF.size(); i++){
             cout << "  ";
             vecF[i]->toString();
             cout << ").\n";
         }
         cout << "Rules(" << vecR.size() << "):\n";
-        for (int i=0; i < vecR.size(); i++) {
+        for (size_t i=0; i < vecR.size(); i++) {
             vecR[i]->toString();
             cout << ".\n";
         }
         cout << "Queries(" << vecQ.size() << "):\n";
-        for (int i=0; i < vecQ.size(); i++){
+        for (size_t i=0; i < vecQ.size(); i++){
             cout << "  ";
             vecQ[i]->toString();
             cout << ")?\n";
         }
         cout << "Domain(" <<domain.size() << "):\n";
-        for (int i=0; i < domain.size(); i++)
+        for (size_t i=0; i < domain.size(); i++)
             cout << "  " << domain[i] << endl;
     }
 };

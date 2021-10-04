@@ -28,14 +28,14 @@ DatalogProgram* Parser::Run(vector<Token*> tokens){
         query(tokens);
         queryList(tokens);
         DatalogProgram* dlp = new DatalogProgram(vecS, vecF, vecR, vecQ);
-        for (int i=0; i < domain.size(); i++){
-            for (int j=0; j < domain.size(); j++){
+        for (size_t i=0; i < domain.size(); i++){
+            for (size_t j=0; j < domain.size(); j++){
                 if (domain[i] == domain[j] && i != j)
                     domain[j].erase();
             }
         }
         vector<string> d;
-        for (int i=0; i < domain.size(); i++)
+        for (size_t i=0; i < domain.size(); i++)
             if (domain[i] != "")
                 d.push_back(domain[i]);
         sort(d.begin(),d.end());

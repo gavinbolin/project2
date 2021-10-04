@@ -12,7 +12,7 @@ public:
         cout << "  ";
         head->toString();
         cout << ") :- ";
-        for (int i=0; i < preds.size(); i++){
+        for (size_t i=0; i < preds.size(); i++){
             preds[i]->toString();
             cout << ")";
             if (i != preds.size()-1)
