@@ -20,6 +20,7 @@ public:
     vector<Predicate*> temp2;
     vector<string> domain;
     bool isQ;
+    DatalogProgram* d = new DatalogProgram(vecS,vecF,vecR,vecQ);
 
     Parser();
     ~Parser();

@@ -46,6 +46,7 @@ DatalogProgram* Parser::Run(vector<Token*> tokens){
         pass = false;
         cout << "Failure!\n  " << tokens[i]->toString();
     }
+    return d;
 }
 
 void Parser::schemeList(vector<Token*> tokens){
