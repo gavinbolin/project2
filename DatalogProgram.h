@@ -11,7 +11,6 @@ private:
     std::vector<Predicate*> vecQ;
     vector<string> domain;
 public:
-    DatalogProgram();
     DatalogProgram(vector<Predicate*> s, vector<Predicate*> f, vector<Rule*> r, vector<Predicate*> q){
         this->vecS = s;
         this->vecF = f;
