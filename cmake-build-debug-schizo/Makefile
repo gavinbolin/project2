@@ -204,6 +204,33 @@ Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
 
+Parser.o: Parser.cpp.o
+
+.PHONY : Parser.o
+
+# target to build an object file
+Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/Parser.cpp.o
+.PHONY : Parser.cpp.o
+
+Parser.i: Parser.cpp.i
+
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
+
 Token.o: Token.cpp.o
 
 .PHONY : Token.o
@@ -276,6 +303,9 @@ help:
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
+	@echo "... Parser.o"
+	@echo "... Parser.i"
+	@echo "... Parser.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"

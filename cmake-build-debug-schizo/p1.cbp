@@ -108,6 +108,9 @@
 		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/CommentAutomaton.h">
 			<Option target="p1"/>
 		</Unit>
+		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/DatalogProgram.h">
+			<Option target="p1"/>
+		</Unit>
 		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/FactsAutomaton.h">
 			<Option target="p1"/>
 		</Unit>
@@ -126,7 +129,19 @@
 		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/MultiplyAutomaton.h">
 			<Option target="p1"/>
 		</Unit>
+		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Parameter.h">
+			<Option target="p1"/>
+		</Unit>
+		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Parser.cpp">
+			<Option target="p1"/>
+		</Unit>
+		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Parser.h">
+			<Option target="p1"/>
+		</Unit>
 		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/PeriodAutomaton.h">
+			<Option target="p1"/>
+		</Unit>
+		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Predicate.h">
 			<Option target="p1"/>
 		</Unit>
 		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/QmarkAutomaton.h">
@@ -136,6 +151,9 @@
 			<Option target="p1"/>
 		</Unit>
 		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/RightParenAutomaton.h">
+			<Option target="p1"/>
+		</Unit>
+		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Rule.h">
 			<Option target="p1"/>
 		</Unit>
 		<Unit filename="/users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/RulesAutomaton.h">

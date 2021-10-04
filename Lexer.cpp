@@ -16,7 +16,6 @@
 #include "StringAutomaton.h"
 #include "CommentAutomaton.h"
 #include "WhitespaceAutomaton.h"
-// ID, String, Comments, Und, EOF
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -45,11 +44,9 @@ void Lexer::CreateAutomata() {
     automata.push_back(new StringAutomaton());
     automata.push_back(new CommentAutomaton());
     automata.push_back(new WhitespaceAutomaton());
-    // TODO: Add the other needed automata here
 }
 
 void Lexer::Run(std::string& input) {
-    // TODO: convert this pseudo-code with the algorithm into actual C++ code
     lineNum = 1;
     while(input.size() > 0) {
         maxRead = 0;
@@ -64,7 +61,7 @@ void Lexer::Run(std::string& input) {
         }
         if (maxRead > 0) {
             Token *newToken = maxAuto->CreateToken(input.substr(0, maxRead), lineNum-maxAuto->NewLinesRead()); //input string, line num
-            if (newToken->notWhite()){
+            if (newToken->notWhite() && newToken->notCom()){
                 tokens.push_back(newToken);
             } else {
                 //input.erase(maxRead,1);
@@ -77,46 +74,10 @@ void Lexer::Run(std::string& input) {
         }
         input.erase(0, maxRead);
     }
-    //for loop for vector of tokens
     Token *eofToken = new Token(TokenType::END, "", lineNum);
     tokens.push_back(eofToken);
-    for (size_t i = 0; i < tokens.size(); i++) {
+    /*for (size_t i = 0; i < tokens.size(); i++) {
         cout << tokens[i]->toString() << endl;
     }
-    cout << "Total Tokens = " << tokens.size();
+    cout << "Total Tokens = " << tokens.size();*/
 }
-
-//loop while input.size() > 0 {
-//set maxRead to 0
-//set maxAutomaton to the first automaton in automata
-
-// TODO: you need to handle whitespace inbetween tokens
-
-// Here is the "Parallel" part of the algorithm
-//   Each automaton runs with the same input
-/*foreach automaton in automata {
-    inputRead = automaton.Start(input)
-    if (inputRead > maxRead) {
-        set maxRead to inputRead
-        set maxAutomaton to automaton
-    }
-}*/
-// Here is the "Max" part of the algorithm
-/*if maxRead > 0 {
-    set newToken to maxAutomaton.CreateToken(...)
-        increment lineNumber by maxAutomaton.NewLinesRead()
-        add newToken to collection of all tokens
-}*/
-// No automaton accepted input
-// Create single character undefined token
-/*else {
-    set maxRead to 1
-        set newToken to a  new undefined Token
-        (with first character of input)
-        add newToken to collection of all tokens
-}
-// Update `input` by removing characters read to create Token
-remove maxRead characters from input
-}
-add end of file token to all tokens
-*/

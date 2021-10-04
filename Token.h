@@ -37,7 +37,6 @@ private:
 
 public:
     Token(TokenType type, string description, int line){
-        //type = this->token.type;
         this->type = type;
         desc = description;
         lineNumber = line;
@@ -49,7 +48,14 @@ public:
         else
             return true;
     }
-    //void getType(){return type;}
+    bool notCom(){
+        if (type == TokenType::COMMENT)
+            return false;
+        else
+            return true;
+    }
+    TokenType getType() {return type;}
+    std::string getDesc(){return desc;}
 
     string toString(){
         string tType;

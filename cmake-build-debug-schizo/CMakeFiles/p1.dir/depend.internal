@@ -33,11 +33,16 @@ CMakeFiles/p1.dir/Lexer.cpp.o
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/StringAutomaton.h
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Token.h
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/WhitespaceAutomaton.h
+CMakeFiles/p1.dir/Parser.cpp.o
+ /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Parser.cpp
+ /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Parser.h
+ /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Token.h
 CMakeFiles/p1.dir/Token.cpp.o
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Token.cpp
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Token.h
 CMakeFiles/p1.dir/main.cpp.o
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Automaton.h
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Lexer.h
+ /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Parser.h
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/Token.h
  /users/guest/g/gbolin/tmp/tmp.mefd2tGEbi/main.cpp
